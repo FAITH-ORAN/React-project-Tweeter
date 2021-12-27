@@ -1,0 +1,1 @@
+export {default} from "./App";// à chaque fois on importe un fichier du dossier APP si il ne trouve pas App.js il cherche index.js il exporte ts de App 
