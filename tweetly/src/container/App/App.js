@@ -1,15 +1,19 @@
 
 import React from 'react';
 import "../../style/App.css";
-import {tweets} from "../../constant";
-import Tweetly from "../../component/Tweetly";
+// import {tweets} from "../../constant";
+// import Tweetly from "../../component/Tweetly";
+// import TweetBox from "../../component/TweetBox";
 import Home from "../Home";
-console.log(tweets);
-console.log(<Tweetly />);
+
+// console.log(tweets);
+// console.log(<Tweetly />);
 
 const App=()=>{
 return <main >
+        
         <Home>
+        
           {/* <Tweetly
             
             fullname={tweets[2].fullname}
@@ -44,18 +48,7 @@ return <main >
             date={tweets[0].date}
           /> affichage à la dure */} 
 
-          {tweets.map((tweet, index)=>(
-            <Tweetly 
-              key={index}
-              fullName={tweet.fullName}
-              content={tweet.content}
-              avatarUrl={tweet.avatarUrl}
-              username={tweet.username}
-              date={tweet.date}
-
-              {...tweet}
-            />
-          ))}
+         
         </Home>
  </main>
 
